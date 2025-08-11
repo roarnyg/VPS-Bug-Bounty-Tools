@@ -2,8 +2,19 @@
 # Author: drak3hft7 and Roarn
 # Date: 11.august 2025
 
-echo "Installere python3 og Go manuelt"
+echo "Installere python3 og Go manuelt?"
+
 pause
+sudo apt install dos2unix
+dos2unix Tools-BugBounty-installer.sh 
+
+sudo apt install go
+
+echo "Hvilken versjon av pip kreves?"
+pause
+sudo apt install pip3
+sudo apt install python3-pip
+
 
 # Check if the script is executed with root privileges
 #if [ "${UID}" -eq 0 ]
@@ -386,4 +397,5 @@ echo -e "\e[32mDone! Socialhunter installed."; echo "";
 sleep 1.5
 
 echo -e "\e[92mDone! Operazione Completata\e[0m\e[39m"; echo "";
+
 
