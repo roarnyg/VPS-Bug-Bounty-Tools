@@ -1,15 +1,18 @@
 #!/bin/bash -i
-# Author: drak3hft7
-# Date: 08/09/2021
+# Author: drak3hft7 and Roarn
+# Date: 11.august 2025
+
+echo "Installere python3 og Go manuelt"
+pause
 
 # Check if the script is executed with root privileges
-if [ "${UID}" -eq 0 ]
-then
-    echo ""; echo -e "\e[32m\e[1mOK. The script will install the tools.\e[0m\e[39m"; echo "";
-else
-    echo ""; echo -e "\e[91m\e[1mRoot privileges are required\e[0m\e[39m"; echo "";
-    exit
-fi
+#if [ "${UID}" -eq 0 ]
+#then
+#    echo ""; echo -e "\e[32m\e[1mOK. The script will install the tools.\e[0m\e[39m"; echo "";
+#else
+#    echo ""; echo -e "\e[91m\e[1mRoot privileges are required\e[0m\e[39m"; echo "";
+#    exit
+#fi
 
 #---------Update & upgrade full
 echo -e "\e[93m\e[1m----> Updating all Packages";
@@ -383,3 +386,4 @@ echo -e "\e[32mDone! Socialhunter installed."; echo "";
 sleep 1.5
 
 echo -e "\e[92mDone! Operazione Completata\e[0m\e[39m"; echo "";
+
