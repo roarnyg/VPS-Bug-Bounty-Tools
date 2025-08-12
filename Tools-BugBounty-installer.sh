@@ -2,18 +2,24 @@
 # Author: drak3hft7 and Roarn
 # Date: 11.august 2025
 
-echo "Installere python3 og Go manuelt?"
+# Dette gir sudo til hele shellet
+sudo -s
+
+# "Installere python3 " Python3 ligger inne
 
 pause
 sudo apt install dos2unix
 dos2unix Tools-BugBounty-installer.sh 
 
-sudo apt install go
+# Installere GO fra https://go.dev/doc/install
+# rm -rf /usr/local/go && tar -C /usr/local -xzf go1.24.6.linux-amd64.tar.gz
+# export PATH=$PATH:/usr/local/go/bin
+# go version
 
 echo "Hvilken versjon av pip kreves?"
 pause
 sudo apt install pip3
-sudo apt install python3-pip
+#sudo apt install python3-pip
 
 
 # Check if the script is executed with root privileges
@@ -30,6 +36,8 @@ echo -e "\e[93m\e[1m----> Updating all Packages";
 apt-get -y update && apt-get -y upgrade
 echo -e "\e[32mDone!";
 sleep 1.5
+echo "siste pause"
+pause
 clear;
 
 #---------Install essential packets
@@ -397,5 +405,6 @@ echo -e "\e[32mDone! Socialhunter installed."; echo "";
 sleep 1.5
 
 echo -e "\e[92mDone! Operazione Completata\e[0m\e[39m"; echo "";
+
 
 
