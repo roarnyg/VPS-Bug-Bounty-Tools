@@ -7,10 +7,6 @@ sudo -s
 
 # "Installere python3 " Python3 ligger inne
 
-pause
-sudo apt install dos2unix
-dos2unix Tools-BugBounty-installer.sh 
-
 # Installere GO fra https://go.dev/doc/install
 # rm -rf /usr/local/go && tar -C /usr/local -xzf go1.24.6.linux-amd64.tar.gz
 # export PATH=$PATH:/usr/local/go/bin
@@ -400,6 +396,7 @@ echo -e "\e[32mDone! Socialhunter installed."; echo "";
 sleep 1.5
 
 echo -e "\e[92mDone! Operazione Completata\e[0m\e[39m"; echo "";
+
 
 
 
