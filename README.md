@@ -4,8 +4,11 @@ Script that automates the installation of the main tools used for web applicatio
 
 ## Usage:
 ```bash
-cd /tmp && git clone https://github.com/drak3hft7/VPS-Bug-Bounty-Tools
+cd /tmp && git clone https://github.com/roarnyg/VPS-Bug-Bounty-Tools
 cd VPS-Bug-Bounty-Tools
+chmod +x Tools-BugBounty-installer.sh
+sudo apt install dos2unix
+dos2unix Tools-BugBounty-installer.sh 
 sudo ./Tools-BugBounty-installer.sh
 ```
 ## Example during installation:
