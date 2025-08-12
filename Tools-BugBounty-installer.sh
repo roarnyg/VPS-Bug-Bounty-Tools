@@ -16,11 +16,6 @@ dos2unix Tools-BugBounty-installer.sh
 # export PATH=$PATH:/usr/local/go/bin
 # go version
 
-echo "Hvilken versjon av pip kreves?"
-pause
-sudo apt install pip3
-#sudo apt install python3-pip
-
 
 # Check if the script is executed with root privileges
 #if [ "${UID}" -eq 0 ]
@@ -55,7 +50,7 @@ sleep 1.5
 
 #---------Install Golang
 echo -e "\e[93m\e[1m----> Golang environment installation in progress ...";
-cd /tmp && wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz > /dev/null 2>&1 && tar xvf go1.21.6.linux-amd64.tar.gz > /dev/null 2>&1;
+cd /tmp && wget https://go.dev/dl/go1.24.6.linux-amd64.tar.gz > /dev/null 2>&1 && tar xvf go1.24.6.linux-amd64.tar.gz > /dev/null 2>&1;
 mv go /usr/local
 export GOROOT=/usr/local/go && export GOPATH=$HOME/go && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH;
 echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile && echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile	&& echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile;
@@ -405,6 +400,7 @@ echo -e "\e[32mDone! Socialhunter installed."; echo "";
 sleep 1.5
 
 echo -e "\e[92mDone! Operazione Completata\e[0m\e[39m"; echo "";
+
 
 
 
