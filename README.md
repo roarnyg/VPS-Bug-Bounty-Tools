@@ -4,7 +4,16 @@ Script that automates the installation of the main tools used for web applicatio
 
 ## Usage:
 ```bash
+
 sudo -s
+apt update
+apt install pip3
+apt install python3-pip
+apt install python-is-python3
+apt install python-dev-is-python3
+pip3 install --upgrade setuptools
+pip install dnspython
+
 wget https://go.dev/dl/go1.25.0.linux-amd64.tar.gz -P ~/Downloads/
 cd ~/Downloads/
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.25.0.linux-amd64.tar.gz
@@ -14,7 +23,6 @@ cd /tmp && git clone https://github.com/roarnyg/VPS-Bug-Bounty-Tools
 cd VPS-Bug-Bounty-Tools
 chmod +x Tools-BugBounty-installer.sh
 apt install dos2unix
-apt install pip3
 dos2unix Tools-BugBounty-installer.sh 
 ./Tools-BugBounty-installer.sh
 ```
