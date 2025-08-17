@@ -5,6 +5,10 @@ Script that automates the installation of the main tools used for web applicatio
 ## Usage:
 ```bash
 sudo -s
+wget https://go.dev/dl/go1.25.0.linux-amd64.tar.gz ~/Downloads/
+cd ~/Downloads/
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.25.0.linux-amd64.tar.gz
+
 cd /tmp && git clone https://github.com/roarnyg/VPS-Bug-Bounty-Tools
 cd VPS-Bug-Bounty-Tools
 chmod +x Tools-BugBounty-installer.sh
