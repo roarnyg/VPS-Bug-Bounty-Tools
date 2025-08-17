@@ -6,6 +6,8 @@ Script that automates the installation of the main tools used for web applicatio
 ```bash
 
 sudo -s
+
+# Vent på at sudo kjøres før du limer inn:
 apt update
 apt install pip3
 apt install python3-pip
