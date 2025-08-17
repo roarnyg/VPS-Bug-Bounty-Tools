@@ -311,7 +311,9 @@ sleep 1.5
 #---------Vuln Scan
 #Nuclei
 echo -e "\e[93m\e[1m----> Installing Nuclei";
-go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei > /dev/null 2>&1 && ln -s ~/go/bin/nuclei /usr/local/bin/;
+# GAMMEL go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei > /dev/null 2>&1 && ln -s ~/go/bin/nuclei /usr/local/bin/;
+
+go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest && ln -s ~/go/bin/nuclei /usr/local/bin/;
 cd ~/tools/
 echo -e "\e[32mDone! Nuclei installed."; echo "";
 sleep 1.5
@@ -396,6 +398,7 @@ echo -e "\e[32mDone! Socialhunter installed."; echo "";
 sleep 1.5
 
 echo -e "\e[92mDone! Operazione Completata\e[0m\e[39m"; echo "";
+
 
 
 
