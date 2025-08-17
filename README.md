@@ -8,6 +8,7 @@ sudo -s
 wget https://go.dev/dl/go1.25.0.linux-amd64.tar.gz -P ~/Downloads/
 cd ~/Downloads/
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.25.0.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
 
 cd /tmp && git clone https://github.com/roarnyg/VPS-Bug-Bounty-Tools
 cd VPS-Bug-Bounty-Tools
