@@ -5,7 +5,7 @@ Script that automates the installation of the main tools used for web applicatio
 ## Usage:
 ```bash
 sudo -s
-wget https://go.dev/dl/go1.25.0.linux-amd64.tar.gz ~/Downloads/
+wget https://go.dev/dl/go1.25.0.linux-amd64.tar.gz -P ~/Downloads/
 cd ~/Downloads/
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.25.0.linux-amd64.tar.gz
 
