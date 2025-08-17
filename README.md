@@ -22,49 +22,9 @@ cd ~/Downloads/
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.25.0.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 
-cd /tmp && git clone https://github.com/roarnyg/VPS-Bug-Bounty-Tools
-cd VPS-Bug-Bounty-Tools
-chmod +x Tools-BugBounty-installer.sh
 apt install dos2unix
-dos2unix Tools-BugBounty-installer.sh 
-./Tools-BugBounty-installer.sh
-```
 
- Installing Python,Ruby and some packages
-Reading package lists... Done
-Building dependency tree... Done
-Reading state information... Done
-Package python is not available, but is referred to by another package.
-This may mean that the package is missing, has been obsoleted, or
-is only available from another source
-However the following packages replace it:
-  python-is-python3
-
-Package python-setuptools is not available, but is referred to by another package.
-This may mean that the package is missing, has been obsoleted, or
-is only available from another source
-
-
-Package python-pip is not available, but is referred to by another package.
-This may mean that the package is missing, has been obsoleted, or
-is only available from another source
-However the following packages replace it:
-  python3-pip
-  
-
-Package python-dev is not available, but is referred to by another package.
-This may mean that the package is missing, has been obsoleted, or
-is only available from another source
-However the following packages replace it:
-  python-dev-is-python3
-  
-
-E: Package 'python' has no installation candidate
-E: Package 'python-pip' has no installation candidate
-E: Unable to locate package python-dnspython
-E: Package 'python-dev' has no installation candidate
-E: Package 'python-setuptools' has no installation candidate
-
+bash```
 ## Example during installation:
 ![Main Logo](images/tool.PNG 'Example')
 
