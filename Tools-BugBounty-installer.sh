@@ -228,7 +228,7 @@ sleep 1.5
 echo -e "\e[93m\e[1m----> Installing JSParser";
 git clone https://github.com/nahamsec/JSParser.git > /dev/null 2>&1;
 cd JSParser*
-sudo python setup.py install
+python setup.py install
 cd ~/tools/
 echo -e "\e[32mDone! JSParser installed."; echo "";
 sleep 1.5
@@ -396,6 +396,7 @@ echo -e "\e[32mDone! Socialhunter installed."; echo "";
 sleep 1.5
 
 echo -e "\e[92mDone! Operazione Completata\e[0m\e[39m"; echo "";
+
 
 
 
