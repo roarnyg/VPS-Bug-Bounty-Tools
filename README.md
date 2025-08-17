@@ -11,7 +11,7 @@ chmod +x Tools-BugBounty-installer.sh
 apt install dos2unix
 apt install pip3
 dos2unix Tools-BugBounty-installer.sh 
-sudo ./Tools-BugBounty-installer.sh
+./Tools-BugBounty-installer.sh
 ```
 
  Installing Python,Ruby and some packages
@@ -28,17 +28,20 @@ Package python-setuptools is not available, but is referred to by another packag
 This may mean that the package is missing, has been obsoleted, or
 is only available from another source
 
+
 Package python-pip is not available, but is referred to by another package.
 This may mean that the package is missing, has been obsoleted, or
 is only available from another source
 However the following packages replace it:
   python3-pip
+  
 
 Package python-dev is not available, but is referred to by another package.
 This may mean that the package is missing, has been obsoleted, or
 is only available from another source
 However the following packages replace it:
   python-dev-is-python3
+  
 
 E: Package 'python' has no installation candidate
 E: Package 'python-pip' has no installation candidate
