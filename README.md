@@ -9,6 +9,7 @@ sudo -s
 
 # Vent på at sudo kjøres før du limer inn:
 apt update
+apt install locate
 apt install pip3
 apt install python3-pip
 apt install python-is-python3
