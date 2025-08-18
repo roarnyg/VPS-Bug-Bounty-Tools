@@ -25,3 +25,6 @@ export PATH=$PATH:/usr/local/go/bin
 apt install dos2unix
 
 Kjør det over manuelt. Scriptet VPS-Bug-Bounty-Tools.sh er utdatert og lager trøbbel. Installer derfor alle tools manuelt. 
+... men ReconFTW installerer de fleste tools!
+
+https://github.com/six2dez/reconftw
